@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mi peso en Marte y la tierra</title>
+  </head>
+  <body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en marte o Jupiter</p>
+    <script type="text/javascript">
+        var usuario = prompt("Cual es tu peso?");
+        var peso = parseInt(usuario);
+        var g_tierra = 9.8;
+        var g_marte = 3.7;
+        var g_jupiter = 24.8;
+        var peso_final;
+
+        peso_final = parseInt(peso);
+        /*peso_final = parseInt(peso_final);*/
+        document.write("<p>Tu peso en la Tierra es: <strong>" + peso_final + "</strong> kg </p>");
+        peso_final = parseInt(peso * g_marte / g_tierra);
+        document.write("<p>Tu peso en Marte es    : <strong>" + peso_final + "</strong> kg</p>");
+        peso_final = parseFloat(peso * g_jupiter / g_tierra);
+        //peso_final = peso_final.toFi
+        document.write("<p>Tu peso en Jupiter es  : <strong>" + peso_final.toFixed(2) + "</strong> kg</p>");
+        //toFixed corta los dedicimales en la posiccion que deseamos.
+        /* Esto es codido  de una alerta
+        /*alert(peso_final);*/
+    </script>
+  </body>
+</html>
